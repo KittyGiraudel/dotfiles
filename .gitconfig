@@ -1,18 +1,29 @@
 [alias]
-	s = status
-	co = checkout
-	ci = commit
-	br = branch
-	pom = push origin master
-	pur = pull --rebase
-	undo = reset --soft HEAD^
-	amend = commit --amend
-	changes = diff --name-status
-	dic = diff --cached
-	diffstat = diff --stat
-	lg = log --pretty=oneline --abbrev-commit --graph --decorate
-	
+  s = status
+  co = checkout
+  ci = commit
+  cp = cherry-pick
+  br = branch
+  pom = push origin master
+  pod = push origin develop
+  pur = pull --rebase
+  undo = reset --soft HEAD^
+  amend = commit --amend
+  changes = diff --name-status
+  dic = diff --cached
+  diffstat = diff --stat
+  lg = log --pretty=oneline --abbrev-commit --graph --decorate
+  
 [filter "media"]
-	clean = git media clean %f
-	smudge = git media smudge %f
-	required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+
+[transfer]
+  fsckobjects = true
+
+[fetch]
+  fsckobjects = true
+
+[receive]
+  fsckObjects = true
