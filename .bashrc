@@ -54,4 +54,6 @@ function prompt_func() {
  
 PROMPT_COMMAND=prompt_func
 
-alias make="make SHELL=/bin/bash"
+# nvm
+export NVM_DIR="/Users/hugogiraudel/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
