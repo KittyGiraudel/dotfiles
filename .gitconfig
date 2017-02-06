@@ -1,19 +1,34 @@
 [alias]
   s = status
   co = checkout
-  ci = commit
+  ci = commit -m
   cp = cherry-pick
   br = branch
+
+  pur = pull --rebase
+  rc = rebase --continue
+  ra = rebase --abort
+  rs = rebase --skip
+  rod = rebase origin/develop
+  rom = rebase origin/master
+
+  poop = stash pop
+
   pom = push origin master
   pod = push origin develop
-  pur = pull --rebase
+  force = push --force-with-lease
+
+  wait = reset HEAD .
   undo = reset --soft HEAD^
   amend = commit --amend
+
   changes = diff --name-status
   dic = diff --cached
   diffstat = diff --stat
   lg = log --pretty=oneline --abbrev-commit --graph --decorate
-  
+
+  count = "!f() { git rev-list --count HEAD ^${1-develop}; }; f"
+
 [filter "media"]
   clean = git media clean %f
   smudge = git media smudge %f
@@ -27,3 +42,6 @@
 
 [receive]
   fsckObjects = true
+
+[push]
+	default = current
