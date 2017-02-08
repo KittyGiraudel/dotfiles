@@ -6,6 +6,7 @@
   br = branch
 
   pur = pull --rebase
+  rb = "!sh -c \"git rebase -i HEAD~$1\" -"
   rc = rebase --continue
   ra = rebase --abort
   rs = rebase --skip
