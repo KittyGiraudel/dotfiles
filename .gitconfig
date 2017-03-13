@@ -5,6 +5,10 @@
   cp = cherry-pick
   br = branch
 
+  co = checkout
+  com = checkout master
+  cod = checkout develop
+
   pur = pull --rebase
   rb = "!sh -c \"git rebase -i HEAD~$1\" -"
   rc = rebase --continue
