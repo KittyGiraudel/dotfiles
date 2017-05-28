@@ -35,7 +35,7 @@
   abort = checkout -- .
   wait = reset HEAD
   undo = reset --soft HEAD^
-  amend = commit --amend
+  amend = commit --amend --no-edit
 
   # Diff related aliases
   changes = diff --name-status
@@ -43,6 +43,11 @@
   diffstat = diff --stat
   lg = log --pretty=oneline --abbrev-commit --graph --decorate
   count = "!f() { git rev-list --count HEAD ^${1-develop}; }; f"
+
+  # Log related aliases
+  lg = log --pretty=oneline --abbrev-commit --graph --decorate
+  overview = log --all --oneline --no-merges
+  changelog = "!sh -c \"git log --oneline --no-merges $1..HEAD\" -"
 
 [filter "media"]
   clean = git media clean %f
