@@ -25,6 +25,7 @@
 
   # Stash related aliases
   poop = stash pop
+  wip = commit -m "WIP" -n
 
   # Push related aliases
   pom = push origin master
@@ -33,6 +34,7 @@
 
   # Mistake related aliases
   abort = checkout -- .
+  nope = checkout -- .
   wait = reset HEAD
   undo = reset --soft HEAD^
   amend = commit --amend --no-edit
@@ -41,13 +43,16 @@
   changes = diff --name-status
   dic = diff --cached
   diffstat = diff --stat
-  lg = log --pretty=oneline --abbrev-commit --graph --decorate
+  showtool = "!f() { git difftool $1^ $1; }; f"
   count = "!f() { git rev-list --count HEAD ^${1-develop}; }; f"
 
   # Log related aliases
   lg = log --pretty=oneline --abbrev-commit --graph --decorate
   overview = log --all --oneline --no-merges
   changelog = "!sh -c \"git log --oneline --no-merges $1..HEAD\" -"
+  
+  # Alias related aliases
+  aliases = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 
 [filter "media"]
   clean = git media clean %f
