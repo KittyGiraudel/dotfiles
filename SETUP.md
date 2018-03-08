@@ -1,10 +1,8 @@
 ## Applications
 
-* Sublime Text 3
-  * Package Control
+* Visual Studio Code
   * Settings
   * Packages
-  * Spacegray theme
 * iTerm 2
   * Spacegray theme
   * Minimum contrast to 50%
