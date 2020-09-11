@@ -6,7 +6,6 @@
 * iTerm 2
   * Spacegray theme
   * Minimum contrast to 50%
-* Franz
 * Spotify
 * Docker
 
@@ -19,10 +18,8 @@
 ## Command-line configuration
 
 * .gitconfig
-* .bashrc
-* .bash_profile
+* .bashrc + .bash_profile or .zshrc
 * SSH key
-* subl CLI (http://stackoverflow.com/a/19842659)
 
 ## System configuration
 
@@ -33,6 +30,4 @@
 
 ## Browser extensions
 
-* Motivation
-* See
 * React DevTools
