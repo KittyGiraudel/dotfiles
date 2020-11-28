@@ -1,0 +1,62 @@
+{
+  "editor.codeLens": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
+  "editor.formatOnSave": false,
+  "editor.lineHeight": 44,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+
+  "explorer.openEditors.visible": 0,
+
+  "extensions.ignoreRecommendations": false,
+
+  "files.associations": { "*.mdx": "markdown" },
+  "files.exclude": {
+    "**/.next": true,
+    "**/cache": true,
+    "**/lib": true,
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": { "files.trimTrailingWhitespace": false },
+
+  "git.enabled": false,
+
+  "search.useGlobalIgnoreFiles": true,
+
+  "terminal.integrated.fontSize": 12,
+
+  "update.showReleaseNotes": false,
+
+  "window.zoomLevel": 1,
+
+  "keyboard.touchbar.enabled": false,
+
+  "powermode.enabled": true,
+  "powermode.customExplosions": ["/Users/<user>/sparkles.gif"],
+  "powermode.enableShake": false,
+  "powermode.maxExplosions": 1,
+  "powermode.explosionFrequency": 4,
+  "powermode.backgroundMode": "mask",
+
+  "workbench.colorTheme": "Dracula Soft",
+  "workbench.commandPalette.history": 5,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "file-icons",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+}
