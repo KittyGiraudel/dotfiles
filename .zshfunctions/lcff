@@ -1,0 +1,4 @@
+function lcff {
+  SHA=$(git log -n 1 --pretty=format:%H -- $1)
+  git show --no-patch $SHA
+}
