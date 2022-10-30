@@ -1,0 +1,11 @@
+function groom {
+  src_folder="${2:-.}"
+  for entry in "$1"/*
+  do
+    name=$(basename $entry)
+    # name="${name%%.*}"
+    if [[ -z "$(grep -r "/$name'" ${src_folder})" ]]; then
+      echo "$entry is unused"
+    fi
+  done
+}
