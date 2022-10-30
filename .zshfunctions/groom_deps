@@ -1,0 +1,6 @@
+function groom_deps {
+  key=${1:-dependencies}
+  for dep in $(cat package.json | jq -cr ".$key|keys|.[]");
+  do [[ -z "$(grep -r  --exclude-dir=node_modules "'${dep}" .)" ]] && echo ${dep};
+  done
+}
