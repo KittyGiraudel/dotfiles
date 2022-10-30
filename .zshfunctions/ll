@@ -1,0 +1,3 @@
+function ll {
+  exa --icons -lah --git --no-user --no-permissions --group-directories-first
+}
